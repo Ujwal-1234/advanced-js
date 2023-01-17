@@ -1,2 +1,5 @@
-# advanced_js
-# advanced_js
+{
+"name":"stark",
+"age":32,
+"interest":"na"
+}
