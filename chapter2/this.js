@@ -70,12 +70,19 @@ const lexical_user = {
     greet() {
         const hello = `Hello, my name is ${this.name} and I know`;
     
-        const langs = this.languages.reduce(function (str, lang, i) {
-            if (i === this.languages.length - 1) {
-            return `${str} and ${lang}.`;
-            }
-            return `${str} ${lang},`;
-        }.bind(this), "");
+        // const langs = this.languages.reduce(function (str, lang, i) {
+        //     if (i === this.languages.length - 1) {
+        //     return `${str} and ${lang}.`;
+        //     }
+        //     return `${str} ${lang},`;
+        // }.bind(this), "");
+
+        // alternate of using reduce() for array
+
+        const langs = this.languages.reduce(mylang)
+        function mylang(First, each){
+            return `${First} ${each}`;  
+        }
         console.log(lexical_user.languages) // to check if the array values are changed after the reduce() method called
         alert(hello + langs);
   },
