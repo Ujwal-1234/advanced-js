@@ -25,6 +25,8 @@ function _champion(playername, goal){
     Player.call(this, playername)       // Here the Player method is called with the context of arguments of _champion
     this.score = goal
 }
+
 _champion.prototype = Object.create(Player.prototype)   
+
 
 const player2 = new _champion("ronaldo", 20)
