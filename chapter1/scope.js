@@ -7,5 +7,5 @@ function scope_of_var2(){
 scope_of_var2();
 console.log(var1)
 console.log(var2)
-
+// using global object window to use win as global
 console.log(window.win)    // using this the var2 variable data can be set to the global execution context 

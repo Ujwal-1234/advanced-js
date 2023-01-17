@@ -13,7 +13,6 @@ function a(){                                       // The first function a-> ..
 }
 a();
 
-
 // in the above code a is called at first 
 // within function a() b() is called
 // within function b() c() is called

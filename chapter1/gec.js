@@ -14,6 +14,5 @@ function process(){
         job : work
     };
 }
-
 // global execution context forms wheneve the js code is runned
 // global execution context contains window, this, global variables and functions defined globally.

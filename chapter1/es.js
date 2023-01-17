@@ -1,4 +1,5 @@
 // execution stack
+
 function stack_1(){
     var data = "The stack 1 is triggered"
     console.log(data)

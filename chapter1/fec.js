@@ -4,7 +4,6 @@
 console.log("name", name)
 console.log("work", work)
 
-
 var name = "stark"
 var work = "enjoy"
 
