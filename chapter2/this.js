@@ -32,3 +32,25 @@ projects.projects.speak()
 
 
 // Explicit Binding
+function greet(){
+    alert(`hello ${this.name}, you have ${this.data}`)
+}
+const ex_user = {
+    name: "explicit binding",
+    data: "dummy data"
+}
+greet.call(ex_user)
+// call is the method to invoke the context of function
+
+
+
+// new binding
+
+function new_User(name, age) {  
+    this.name = name;
+    this.age = age;
+  }
+const me = new new_User("Tyler", 27);
+const you = new new_User("stark", 40);
+alert(`hey, ${me.name}, your age is ${me.age}`);
+alert(`hey, ${you.name}, your age is ${you.age}`);
